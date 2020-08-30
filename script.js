@@ -100,3 +100,7 @@ let validar = () => {
       Gracias por preferirnos.`;
   }
 };
+
+let reset = ()=>{
+  location.reload();
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name="rut"
+        id="rut"
+        placeholder="Rut"
+        onblur="validarRut()"
+      /><br />
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        onblur="validaNombre()"
+        placeholder="Nombres"
+      /><br />
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        onblur="validaApellido()"
+        placeholder="Apellidos"
+      /><br />
+      <input
+        type="text"
+        name="edad"
+        id="edad"
+        onblur="validaEdad()"
+        placeholder="Edad"
+        maxlength="3"
+      /><br />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        onblur="validaEmail()"
+        placeholder="Email"
+      /><br />
+      <select name="especialidad" id="especialidad">
+        <option value="0" disabled selected>Especialidad</option>
+        <option value="Psicología">Psicología</option>
+        <option value="Psiquiatra">Psiquiatra</option></select
+      ><br />
+      <input
+        type="text"
+        name="fecha"
+        id="fecha"
+        onblur="validaFecha()"
+        placeholder="dd-mm-yyyy"
+      /><br />
+      <select name="hora" id="hora">
+        <option value="0" disabled selected>Hora</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option></select
+      ><br />
+
+      <button id="reserva" onclick="validar()">Reservar</button>
+    </form>
+
+    <div>
+      <p></p>
+    </div>
+
+    <script>
+      document
+        .getElementById("reserva")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+        });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
